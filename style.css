@@ -3,19 +3,51 @@
 	margin: 0 auto;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	background-image: url(images/starBG.gif);
 }
 
 #container {
-	width: 960px;
-	color: #fff;
+	min-height: 100%;
+}
+
+#nav {
+	padding: 20px 0px;
+	background-color: #252525;
+	position: fixed;
+	width: 100%;
+}
+
+#nav-content {
+	text-align: right;
+	font-family: arial;
+	font-size: 20px;
+}
+
+#nav-content li {
+	display: inline;
+	padding-right: 50px;
+}
+
+#nav-content a {
+	text-decoration: none;
+	color: #fafafa;
+}
+
+#nav-content a:hover {
+	color: #000;
+	
 }
 
 #temp {
-	margin-top: 30%;
+	padding-top: 100px;
 	text-align: center;
 	font-size: 36px;
+	color: #fff;
 }
 
 #avatar {
