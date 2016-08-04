@@ -11,9 +11,19 @@ body {
 	background-image: url(images/starBG.gif);
 }
 
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
 #container {
 	min-height: 100%;
 }
+
+/* navigation rules */
 
 #nav {
 	padding: 20px 0px;
@@ -22,26 +32,26 @@ body {
 	width: 100%;
 }
 
-#nav-content {
-	text-align: right;
+.nav-content {
 	font-family: arial;
 	font-size: 20px;
 }
 
-#nav-content li {
+.nav-content li {
 	display: inline;
-	padding-right: 50px;
 }
 
-#nav-content a {
+.nav-content a {
 	text-decoration: none;
 	color: #fafafa;
+	padding: 20px 20px 20px 20px;
 }
 
-#nav-content a:hover {
-	color: #000;
-	
+.nav-content a:hover {
+	opacity: .5;
 }
+
+/* jumbo rules */
 
 #temp {
 	padding-top: 100px;
