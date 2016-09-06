@@ -7,27 +7,18 @@ html, body {
 	height: 100%;
 }
 
-body {
-	background-image: url(images/starBG.gif);
-}
-
-.right {
-	float: right;
-}
-
-.left {
-	float: left;
-}
-
 #container {
 	min-height: 100%;
+	background-image: url(images/bushes-dark.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover	
 }
 
 /* navigation rules */
 
 #nav {
 	padding: 20px 0px;
-	background-color: #252525;
 	position: fixed;
 	width: 100%;
 }
@@ -35,6 +26,7 @@ body {
 .nav-content {
 	font-family: arial;
 	font-size: 20px;
+	text-align: center;
 }
 
 .nav-content li {
@@ -44,23 +36,29 @@ body {
 .nav-content a {
 	text-decoration: none;
 	color: #fafafa;
-	padding: 20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	padding: 12px;
+	border: 1px #fafafa solid; 
+	border-radius: 5px;
 }
 
 .nav-content a:hover {
-	opacity: .5;
+	opacity: .8;
 }
 
 /* jumbo rules */
-
-#temp {
-	padding-top: 100px;
-	text-align: center;
-	font-size: 36px;
-	color: #fff;
+#jumbotron {
+	padding-top: 200px;
+	padding-left: 50px;
+	font-family: arial;
+	color: #fafafa;
 }
-
-#avatar {
-	height: 200px;
-	width: 200px;
+#jumbotron h1 {
+	font-size: 120px;
+	text-shadow: 2px 1px #000000;
+}
+#jumbotron p {
+	font-size: 48px;
+	padding-left: 15px;
+	text-shadow: 2px 1px #000000;
 }
