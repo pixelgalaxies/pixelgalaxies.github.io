@@ -1,13 +1,13 @@
 *{
 	padding: 0px;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 
 html, body {
 	height: 100%;
 }
 
-#container {
+#index-container {
 	min-height: 100%;
 	background-image: url(images/bushes-dark.jpg);
 	background-position: center center;
@@ -15,40 +15,75 @@ html, body {
 	background-size: cover	
 }
 
+#container {
+	min-height: 100%;
+	background: #000000;
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0px;
+	background: #090909;
+	color: #fafafa;
+}
+
+.no-border {
+	border: hidden;
+}
+
+
+
+
+
 /* navigation rules */
 
 #nav {
-	padding: 20px 0px;
-	position: fixed;
-	width: 100%;
+	padding: 10px 0px;
+	height: 100px;
 }
 
 .nav-content {
 	font-family: arial;
 	font-size: 20px;
 	text-align: center;
+	height: 100px;
 }
 
 .nav-content li {
 	display: inline;
+	margin: 0px 20px;
+	
 }
 
 .nav-content a {
 	text-decoration: none;
 	color: #fafafa;
-	margin: 20px 20px 20px 20px;
-	padding: 12px;
 	border: 1px #fafafa solid; 
 	border-radius: 5px;
+	padding: 10px;
 }
 
 .nav-content a:hover {
-	opacity: .8;
+	color: #acacac;
 }
 
+#avatar {
+	height: 100px;
+	width: 100px;
+	padding: 0px;
+	margin-bottom: -40px;
+	border: 1px #fafafa solid;
+	border-radius: 50%;
+}
+
+
+
+
+
 /* jumbo rules */
+
 #jumbotron {
-	padding-top: 200px;
+	padding-top: 150px;
 	padding-left: 50px;
 	font-family: arial;
 	color: #fafafa;
