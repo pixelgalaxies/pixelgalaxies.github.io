@@ -33,7 +33,7 @@ nav {
 	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 	#avatar {
 		height: 100px;
 		width: 100px;
