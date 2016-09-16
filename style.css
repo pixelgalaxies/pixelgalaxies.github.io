@@ -1,24 +1,55 @@
 *{
-	padding: 0px;
-	margin: 0px auto;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
 }
 
-#index-container {
-	min-height: 100%;
-	background-image: url(images/bushes-dark.jpg);
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover	
+
+nav {
+	background-color: black;
 }
 
-#container {
-	min-height: 100%;
-	background: #000000;
+.jumbo{
+	background-image: url(images/bushes-dark.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 10rem;
+	color: #fafafa;
+	text-shadow: 2px 3px #000000;
+	font-family: 'Ubuntu', sans-serif;
 }
+
+
+
+
+
+
+
+
+@media (min-width: 300px) {
+	#avatar {
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+	}
+}
+
+@media (min-width: 800px) {
+	#avatar {
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		margin-bottom: -70px
+	}
+}
+
+
+
 
 footer {
 	text-align: center;
@@ -27,73 +58,4 @@ footer {
 	color: #fafafa;
 }
 
-.no-border {
-	border: hidden;
-}
 
-
-
-
-
-/* navigation rules */
-
-#nav {
-	padding: 10px 0px;
-	height: 100px;
-}
-
-.nav-content {
-	font-family: arial;
-	font-size: 20px;
-	text-align: center;
-	height: 100px;
-}
-
-.nav-content li {
-	display: inline;
-	margin: 0px 20px;
-	
-}
-
-.nav-content a {
-	text-decoration: none;
-	color: #fafafa;
-	border: 1px #fafafa solid; 
-	border-radius: 5px;
-	padding: 10px;
-}
-
-.nav-content a:hover {
-	color: #acacac;
-}
-
-#avatar {
-	height: 100px;
-	width: 100px;
-	padding: 0px;
-	margin-bottom: -40px;
-	border: 1px #fafafa solid;
-	border-radius: 50%;
-}
-
-
-
-
-
-/* jumbo rules */
-
-#jumbotron {
-	padding-top: 150px;
-	padding-left: 50px;
-	font-family: arial;
-	color: #fafafa;
-}
-#jumbotron h1 {
-	font-size: 120px;
-	text-shadow: 2px 1px #000000;
-}
-#jumbotron p {
-	font-size: 48px;
-	padding-left: 15px;
-	text-shadow: 2px 1px #000000;
-}
