@@ -10,7 +10,7 @@ html, body {
 
 
 nav {
-	background-color: black;
+	background-color: #050505;
 }
 
 .jumbo{
@@ -54,7 +54,7 @@ nav {
 footer {
 	text-align: center;
 	padding: 20px 0px;
-	background: #090909;
+	background: #050505;
 	color: #fafafa;
 }
 
