@@ -18,18 +18,12 @@ nav {
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
-	padding-top: 10rem;
+	padding-top: 10%;
+	padding-left: 5%; 
 	color: #fafafa;
 	text-shadow: 2px 3px #000000;
 	font-family: 'Ubuntu', sans-serif;
 }
-
-
-
-
-
-
-
 
 @media (min-width: 300px) {
 	#avatar {
@@ -48,14 +42,9 @@ nav {
 	}
 }
 
-
-
-
 footer {
 	text-align: center;
 	padding: 20px 0px;
 	background: #050505;
 	color: #fafafa;
 }
-
-
