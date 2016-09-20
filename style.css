@@ -6,6 +6,7 @@
 
 html, body {
 	height: 100%;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -17,12 +18,9 @@ nav {
 	background-image: url(images/bushes-dark.jpg);
 	background-position: center;
 	background-attachment: fixed;
-	background-size: cover;
-	padding-top: 10%;
-	padding-left: 5%; 
+	background-size: cover; 
 	color: #fafafa;
 	text-shadow: 2px 3px #000000;
-	font-family: 'Ubuntu', sans-serif;
 }
 
 @media (min-width: 300px) {
@@ -30,15 +28,14 @@ nav {
 		height: 100px;
 		width: 100px;
 		border-radius: 50%;
+		margin-top: .5rem;
 	}
 }
 
 @media (min-width: 700px) {
 	#avatar {
-		height: 100px;
-		width: 100px;
-		border-radius: 50%;
-		margin-bottom: -70px
+		height: 150px;
+		width: 150px;
 	}
 }
 
