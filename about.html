@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300" rel="stylesheet">
+	
+	<link type="text/css" rel="stylesheet" href="flex.css">
 	<link type="text/css" rel="stylesheet" href="style.css">
-	<title>Document</title>
+	<title>Dustin Clark - Home</title>
 </head>
 <body>
-	<div id="container">
-		<div id="nav">
-			<div class="nav-content right">
-				<ul>
-					<li><a href="about.html">About Me</a></li>
-					<li><a href="ed.html">Education</a></li>
-					<li id="avatar"><a href="index.html"><img id="avatar" src="images/avatar.JPG"></a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-		</div>
+	<nav class="nav-wrapper">
+		<ul class="nav-list">
+			<li class="nav-item"><a class="btn ghost-btn" href="index.html">Home</a></li>
+		</ul>
+		<ul class="nav-list">
+			
+			<li class="nav-item"><a class="btn ghost-btn" href="#">About Me</a></li>
+			<li class="nav-item"><a class="btn ghost-btn" href="#">Education</a></li>
+			<li class="nav-item"><a class="btn ghost-btn" href="#">Projects</a></li>
+			<li class="nav-item"><a class="btn ghost-btn" href="#">Contact</a></li>
+		</ul>
+	</nav>
 	
-	</div> <!-- Ends container -->
+	<div class="grid center">
+		<div class="row">
+			<div class="col-third">
+				<img src="images/avatar.JPG">
+			</div>
+			<div class="col-third">
+				<h1>About me:</h1>
+				<p>Sometimes I just have to stop and ask myself, wtf am I even doing with my life. </p>
+			</div>
+			<div class="col-third">Poop</div>
+		</div>
+	</div>
 	
 	<footer>
 		<h1>SITE IS UNDER CONSTRUCTION</h1>
