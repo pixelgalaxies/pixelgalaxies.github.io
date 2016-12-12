@@ -1,3 +1,7 @@
+/* stylesheet for Dustin Clark's Portfolio
+----------------------------------------------------
+*/
+
 *{
 	padding: 0;
 	margin: 0;
@@ -9,21 +13,112 @@ html, body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-
 nav {
 	background-color: #050505;
+	width: 100%;
 }
 
-.jumbo{
+
+
+
+
+
+
+/* Home Jumbotron
+----------------------------------------------------
+*/
+
+#home.jumbo{
 	background-image: url(images/bushes-dark.jpg);
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover; 
 	color: #fafafa;
-	text-shadow: 2px 3px #000000;
-	text-align: center;
+	min-height: 100%;
+	padding: 1rem 0 0 2rem
 }
 
+
+
+
+
+
+/* About Me Grid
+----------------------------------------------------
+*/
+
+#about {
+	background-color: #ffffff;;
+}
+
+#about h1 {
+	border: 5px #00000 solid;
+}
+
+.about-text {
+	
+}
+
+
+
+
+
+/* Education Grid
+----------------------------------------------------
+*/
+
+#ed {
+	background-color: #838383;
+}
+
+
+
+
+
+/* Porjects Grid
+----------------------------------------------------
+*/
+
+#projects {
+	background-color: #737373;
+}
+
+
+
+
+
+/* Contact Jumobo
+----------------------------------------------------
+*/
+
+#contact.jumbo{
+	background-color: #636363;
+	min-height: 100%
+}
+
+.white {
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+
+
+
+footer {
+	text-align: center;
+	padding: 20px 0px;
+	background: #050505;
+	color: #fafafa;
+}
+
+
+
+
+
+/* Media Queries
+
+----------------------------------------------------
+*/
 @media (min-width: 300px) {
 	#avatar {
 		height: 100px;
@@ -32,22 +127,40 @@ nav {
 		margin-top: .5rem;
 	}
 	
-	.grid {
-		min-height: 80%;
-		background-color: #acacac;
+	#about p,
+	.ed p {
+		text-align: justify;
 	}
 }
 
-@media (min-width: 700px) {
+
+
+
+
+@media (min-width: 768px) {
+	.nav-item {
+		margin: 1rem
+	}
+	
 	#avatar {
 		height: 150px;
 		width: 150px;
 	}
+	
+	#about p,
+	#ed p {
+		font-size: 1.2rem;
+	}
 }
 
-footer {
-	text-align: center;
-	padding: 20px 0px;
-	background: #050505;
-	color: #fafafa;
+
+
+
+
+@media (min-width: 1000px) {
+	#about p,
+	#ed p {
+		font-size: 1.5rem;
+	}
 }
+
