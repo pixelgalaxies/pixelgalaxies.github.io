@@ -1,0 +1,25 @@
+body {
+	background-image: url(../images/background.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-family: "Space Mono", monospace;
+	color: #fafafa;
+}
+
+.dark {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 20px;
+}
+
+.splash {
+	height: 20%;
+}
+
+.splash h1 {
+	font-size: 48px;
+}
+
+.splash p {
+	font-size: 20px;
+}
