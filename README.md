@@ -16,3 +16,10 @@ Fizzbuzz
 pixelgalaxies
 
 2019:
+Wild Magic Surge
+Portfolio Update
+Kavaya Site
+
+2020:
+Crescendo Update
+Virtuoso
