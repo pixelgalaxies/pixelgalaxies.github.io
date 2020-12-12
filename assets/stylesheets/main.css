@@ -1,25 +1,27 @@
 body {
-	background-image: url(../images/background.png);
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	font-family: "Space Mono", monospace;
-	color: #fafafa;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/background.png);
+  font-family: "Space Mono", monospace;
+  color: #fafafa;
 }
 
 .dark {
-	background-color: rgba(0, 0, 0, 0.8);
-	padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
 }
 
 .splash {
-	height: 20%;
+  margin-bottom: 25px;
 }
 
 .splash h1 {
-	font-size: 48px;
+  font-size: 48px;
 }
 
 .splash p {
-	font-size: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #fafafa;
 }
+/*# sourceMappingURL=main.css.map */
