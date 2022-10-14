@@ -1,173 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" />
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pixelgalaxies</title>
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/necolas/normalize.css/normalize.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<script src="https://unpkg.com/vue@next" defer></script>
+	<script src="app.js" defer></script>
+</head>
 
-		<link rel="stylesheet" href="assets/node_modules/normalize.css/normalize.css" />
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@master/crescendo.css" />
-
-		<link rel="stylesheet" href="assets/stylesheets/main.css" />
-
-		<title>pixelgalaxies | Home</title>
-	</head>
-	<body>
-		<div class="grid-container">
-			<div class="grid-set">
-				<div class="row">
-					<div class="col-12 splash true-center">
-						<h1>pixelgalaxies</h1>
-						<p>it's not the destination, it's the journey</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 ">
-						<p>
-							Hello World. My name is Dustin. I started on this path in community college in 2015. I had taken a introduction to web development class as an elective and fell in love. This is a
-							timeline of some of my projects. Enjoy.
-						</p>
-					</div>
-				</div>
-
-				<div class="row fold" data-fold="work2020">
-					<div class="col-12 dark hcenter">
-						<h2>2020</h2>
-					</div>
-				</div>
-
-				<div class="row toFold folded" id="work2020">
-					<div class="col-12">
-						<img src="" alt="" />
-						<div class="dark">
-							Crescendo Update
-						</div>
-					</div>
-				</div>
-
-				<div class="row fold" data-fold="work2019">
-					<div class="col-12 dark hcenter">
-						<h2>2019</h2>
-					</div>
-				</div>
-
-				<div class="row toFold folded" id="work2019">
-					<div class="col-md-4">
-						<img src="" alt="" />
-						<div class="dark">
-							Kavaya
-						</div>
-					</div>
-					<div class="col-md-4">
-						<img src="" alt="" />
-						<div class="dark">
-							Wild Magic Surge
-						</div>
-					</div>
-					<div class="col-md-4">
-						<img src="" alt="" />
-						<div class="dark">
-							Portfolio Update
-						</div>
-					</div>
-				</div>
-
-				<div class="row fold" data-fold="work2018">
-					<div class="col-12 dark hcenter">
-						<h2>2018</h2>
-					</div>
-				</div>
-
-				<div class="row toFold folded" id="work2018">
-					<div class="col-md-6">
-						<img src="" alt="" />
-						<div class="dark">
-							pixelgalaxies
-						</div>
-					</div>
-					<div class="col-md-6">
-						<img src="" alt="" />
-						<div class="dark">
-							Fizzbuzz
-						</div>
-					</div>
-				</div>
-
-				<div class="row fold" data-fold="work2017">
-					<div class="col-12 dark hcenter">
-						<h2>2017</h2>
-					</div>
-				</div>
-
-				<div class="row toFold folded" id="work2017">
-					<div class="col-md-4">
-						<img src="" alt="" />
-						<div class="dark">
-							CCC 2017
-						</div>
-					</div>
-					<div class="col-md-4">
-						<img src="" alt="" />
-						<div class="dark">
-							Portfolio
-						</div>
-					</div>
-					<div class="col-md-4">
-						<img src="" alt="" />
-						<div class="dark">
-							Atropos
-						</div>
-					</div>
-				</div>
-
-				<div class="row fold" data-fold="work2016">
-					<div class="col-12 dark hcenter">
-						<h2>2016</h2>
-					</div>
-				</div>
-
-				<div class="row toFold folded" id="work2016">
-					<div class="col-md-6">
-						<img src="" alt="" />
-						<div class="dark">
-							Burn It All
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<img src="" alt="" />
-						<div class="dark">
-							Crescendo
-						</div>
-					</div>
-				</div>
-
-				<div class="row fold" data-fold="work2015">
-					<div class="col-12 dark hcenter">
-						<h2>2015</h2>
-					</div>
-				</div>
-
-				<div class="row toFold folded" id="work2015">
-					<div class="col-md-6">
-						<img src="" alt="" />
-						<div class="dark">
-							808 Bakery
-						</div>
-					</div>
-					<div class="col-md-6">
-						<img src="" alt="" />
-						<div class="dark">
-							50 Shades Greener
-						</div>
-					</div>
-				</div>
+<body>
+	<main>
+		<section class="page-heading">
+			<div class="page-heading__title">
+				<h1>pixelgalaxies</h1>
+				<h2>it's not the destination, <br>it's the journey.</h2>
 			</div>
-			<!-- /grid-960 -->
-		</div>
-		<!-- /grid-container -->
-	</body>
+			<div class="page-heading__description">
+				<p>
+					Hello world! My name is Dustin. I started my journey with web development while in school for networking. I
+					took
+					and introduction to html class as an elective and the rest is history. This is a timeline of every personal
+					project I still have access to, big and small.
+				</p>
+			</div>
+		</section>
+		<section id="app" class="timeline">
+			<ul class="timeline__list">
+				<li :key="item.year" v-for="(item, index) in projects" :class="index % 2 === 0 ? 'left' : 'right'">
+					<div class="dot">
+						<i class="fa fa-square" id=""></i>
+					</div>
+
+					<div class="timeline__item">
+						<h2>[{{ item.year }}]</h2>
+						<ul class="timeline__links">
+							<li :key="project.text" v-for="project in item.list" :>
+								<a :href="project.gitLink">{{ project.text }}</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</main>
+</body>
+
 </html>
-<script src="https://cdn.jsdelivr.net/gh/pixelgalaxies/crescendo@master/crescendo.js"></script>

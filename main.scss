@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("	https://www.pixelgalaxies.com/assets/images/background.png");
+	font-family: "Space Mono", monospace;
+}
+
+main {
+	max-width: 992px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.page-heading {
+	color: #f0ecaf;
+	> div {
+		margin: 0 auto;
+		margin-bottom: 20px;
+		text-align: center;
+		padding: 25px;
+		background-color: rgba(0,0,0,.8);
+
+	}
+	&__title {
+		@media (min-width: 768px) {
+			max-width: 50%;
+		}
+		h1 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.timeline {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #f0ecaf;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+    
+  }
+  
+  &__list {
+    
+    li {
+      list-style: none;
+      &.right {
+        .timeline__item {
+          margin-left: auto;
+        }
+      }
+    }
+    .dot {
+      text-align: center;
+      color: #f0ecaf;
+      position: relative;
+      z-index: 1;
+      top: 25px;
+    }
+  }
+	&__item {
+		width: calc(45% - 30px);
+		background-color: #f0ecaf;
+		padding: 15px;
+	}
+}
