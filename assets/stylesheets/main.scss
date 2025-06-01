@@ -1,0 +1,178 @@
+@use "resets" as *;
+@use "mixins" as *;
+@use "variables" as *;
+
+
+body {
+	font-family: "Space Mono", monospace;
+  color: $white;
+}
+
+main {
+  @include h100;
+  position: relative;
+}
+
+section {
+  background-image:
+    linear-gradient(rgba($black, 0.8) 0 0),
+    url('/assets/images/bg.svg');
+  background-size: cover;
+  background-position: left;
+  padding: $gap;
+}
+
+
+// HERO
+.hero {
+  @include h100;
+  @include flex-center;
+  // background-image:
+  //   linear-gradient(rgba(0, 0, 0, 0.8) 0 0),
+  //   url('https://art.pixilart.com/sr5zf3aa0b72b4aws3.png');
+  background-image:
+    linear-gradient(rgba($black, 0.8) 0 0),
+    url('/assets/images/heroBg.svg');
+  
+  &__heading {
+    order: 2;
+    font-size: 40px;
+    text-transform: lowercase;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    @media (min-width: $sm) {
+      font-size: 48px;
+    }
+
+    @media (min-width: $md) {
+      font-size: 56px;
+    }
+    
+    @media (min-width: $lg) {
+      font-size: 72px;
+    }
+  }
+  
+  &__subheading {
+    order: 1;
+    font-size: 18px;
+    margin-bottom: -16px;
+
+    @media (min-width: $sm) {
+    
+    }
+
+    @media (min-width: $xl) {
+      font-size: 28px;  
+    }
+  }
+  
+  &__copy {
+    order: 3;
+    max-width: 65ch;
+  }
+}
+
+
+.about {
+  &__wrapper {
+    @include contain;
+  }
+
+  &__heading {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &__row {
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: $gap;
+    }
+
+    span,
+    p {
+      margin-left: $gap;
+    }
+  }
+}
+
+// PROJECTS
+
+.projects {
+  &__wrapper {
+    @include contain;
+  }
+
+  &__heading,
+  &__subheading {
+    margin-bottom: $gap;
+  }
+
+  &__copy {
+    margin-bottom: 48px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap;
+
+    @media (min-width: $lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__disclaimer {
+    margin-top: 48px;
+  }
+}
+
+.project-item {
+  background-color: rgba($white, 0.7);
+  padding: $gap;
+  color: $black;
+
+  &:not(:last-child) {
+    margin-bottom: $gap;
+  }
+
+  &__heading {
+
+  }
+
+  &__copy {
+    margin-bottom: 10px;
+  }
+
+  &__links {
+    a {
+      display: block;
+      color: $black;
+      font-weight: 700;
+      transition: color 0.3s linear;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $accent;
+      }
+    }
+  }
+}
+
+footer {
+  padding: $gap 48px;
+  text-align: center;
+  background-color: $black;
+}

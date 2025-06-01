@@ -7,48 +7,225 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>pixelgalaxies</title>
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/necolas/normalize.css/normalize.css" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="main.css">
-	<script src="https://unpkg.com/vue@next" defer></script>
-	<script src="app.js" defer></script>
+	<link rel="stylesheet" href="/assets/stylesheets/main.css">
 </head>
 
 <body>
 	<main>
-		<section class="page-heading">
-			<div class="page-heading__title">
-				<h1>pixelgalaxies</h1>
-				<h2>it's not the destination, <br>it's the journey.</h2>
-			</div>
-			<div class="page-heading__description">
-				<p>
-					Hello world! My name is Dustin. I started my journey with web development while in school for networking. I
-					took
-					and introduction to html class as an elective and the rest is history. This is a timeline of every personal
-					project I still have access to, big and small.
-				</p>
-			</div>
-		</section>
-		<section id="app" class="timeline">
-			<ul class="timeline__list">
-				<li :key="item.year" v-for="(item, index) in projects" :class="index % 2 === 0 ? 'left' : 'right'">
-					<div class="dot">
-						<i class="fa fa-square" id=""></i>
-					</div>
+    <section class="hero">
+      <h1 class="hero__heading">Pixelgalaxies</h1>
+      
+      <h2 class="hero__subheading">Lost in space, found in code.</h2>
+      
+      <p class="hero__copy">It started with a blinking cursor — a tiny signal in the void. Armed with nothing but curiosity and a web browser, I launched myself into the unknown. Learning to code has been like charting a new galaxy: strange syntax, alien errors, and the occasional black hole of debugging. But with every breakthrough, a new world of possibilities appears. This is my voyage through the stars of JavaScript, HTML, and beyond.</p>
+    </section>
+    
+    
+    
+    <!-- <section class="about">
+      <div class="about__wrapper">
+        <h2 class="about__heading">Every traveller has a beginning.</h2>
+        <div class="about__row">
+          <h3>Player:</h3>
+          <span>Dustin063</span>
+        </div>
+        
+        <div class="about__row">
+          <h3>Objective:</h3>
+          <span>Learn to code. Conquer the cosmos.</span>
+        </div>
+        
+        <div class="about__row">
+          <h3>Difficulty:</h3>
+          <span>Increasing (but totally worth it)</span>
+        </div>
+        
+        <div class="about__row">
+          <h3>Story:</h3>
+          <p>In a distant corner of the digital galaxy, a lone explorer sets out armed with only a keyboard, a browser, and an unshakable sense of wonder. Their mission: navigate the vast and mysterious universe of web development. From the fiery stars of HTML to the icy moons of JavaScript, they'll debug alien anomalies, collect knowledge modules, and level up their skills one function at a time.</p>
+        </div>
+        
+        <div class="about__row">
+          <h3>Warning:</h3>
+          <span>Expect strange bugs, cryptic errors, and the occasional infinite loop.</span>
+        </div>
+        
+        <div class="about__row">
+          <h3>Tips:</h3>
+          <span>Save early. Push often. Trust no semicolon.</span>
+        </div>
+      </div>
+    </section> -->
 
-					<div class="timeline__item">
-						<h2>[{{ item.year }}]</h2>
-						<ul class="timeline__links">
-							<li :key="project.text" v-for="project in item.list" :>
-								<a :href="project.gitLink">{{ project.text }}</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</section>
-	</main>
+
+
+    <section class="projects">
+      <div class="projects__wrapper">
+        <h2 class="projects__heading">
+          It's not the destination, it's the journey.
+        </h2>
+
+        <p class="projects__copy">
+          Below are some links: a glimpse of the path I've taken to get where I am today.
+        </p>
+
+        <div class="projects__grid">
+          <div class="projects__fun grid-item">
+            <h3 class="projects__subheading">Fun Stuff:</h3>
+
+            <ul class="projects__list">
+              <li class="project-item">
+                <h4 class="project-item__heading">Proxima</h4>
+                <p class="project-item__copy">My most recent personal project. Proxima is a SASS library that inclues a host of classes to give any site a cyberpunk edge.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/proxima">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/proxima/">
+                    Live
+                  </a>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <h4 class="project-item__heading">Wild Magic</h4>
+                <p class="project-item__copy">An older project, Wild Magic is a simple tool for Dungeons and Dragons DMs and Players alike. Just click the button to simulate a D100 roll for a wild magic effect.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/wildmagic">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/wildmagic/">
+                    Live
+                  </a>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <h4 class="project-item__heading">Atropos</h4>
+                <p class="project-item__copy">My oldest "fun" project, Atropos takes in your current age and shows you with visual blocks how much time you have left before you hit the average human lifespan. It seems morbid at first but it's supposed to inspire users to live every day like it's their last.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/atropos">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/atropos/">
+                    Live
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div class="projects__fundamentals grid-item">
+            <h3 class="projects__subheading">The Fundamentals:</h3>
+
+            <ul class="projects__list">
+              <li class="project-item">
+                <h4 class="project-item__heading">Virtuoso</h4>
+                <p class="project-item__copy">Virtuoso is my most recent fundamentals project that taught me a lot about the CSS Grid module. It's a library of classes to make layouts easy. Learning about CSS grid though, I have gained the skill to make quick layouts using the module itself.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/virtuoso">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/virtuoso/">
+                    Live
+                  </a>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <h4 class="project-item__heading">Crescendo</h4>
+                <p class="project-item__copy">My original "first big project." This is another CSS library I made to teach me flexbox fundamentals. The library itself uses utility classes for quick layouts without havign to tinker about. I used the library itself in a lot of early projects before I knew about grid.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/crescendo">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/crescendo/">
+                    Live
+                  </a>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <h4 class="project-item__heading">Burn It All</h4>
+                <p class="project-item__copy">My take on the classic quote generator. Taught me some javascript fundamentals early on.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/burnitall">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/burnitall/">
+                    Live
+                  </a>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <h4 class="project-item__heading">The Visual FizzBuzz</h4>
+                <p class="project-item__copy">A spin on a classic early/easy javascript problem. I wanted to go the extra mile and put the output in the browser. Again, taught me early javascript fundamentals.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/fizzbuzz">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/fizzbuzz/">
+                    Live
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="projects__school grid-item">
+            <h3 class="projects__subheading">Early School Stuff:</h3>
+            <ul class="projects__list">
+              <li class="project-item">
+                <h4 class="project-item__heading">808 Bakery</h4>
+                <p class="project-item__copy">When I went back to school for networking, I stumbled into a web development elective which is technically where I started this journey. 808 Bakery is my final project for this class.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/808bakery">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/808bakery/">
+                    Live
+                  </a>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <h4 class="project-item__heading">50 Shade of Green</h4>
+                <p class="project-item__copy">Officially the first full website I've ever built. This was my very first project for the previously mentioned web development elective class. Given everything I've learned since this class, this project is pretty wild to look back at.</p>
+                
+                <div class="project-item__links">
+                  <a target="_blank" href="https://github.com/pixelgalaxies/50shades">
+                    GitHub
+                  </a>
+                  <a target="_blank" href="https://www.pixelgalaxies.com/50shades/">
+                    Live
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="projects__disclaimer">I would like to highlight that this list is not at all a complete historical respresentation of every single thing I've coded. Some things are simply lost to time. But what I do have paints a neat picture, I feel.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; Dustin Clark
+  </footer>
 </body>
 
 </html>

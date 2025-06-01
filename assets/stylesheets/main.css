@@ -1,0 +1,273 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  font-style: italic;
+}
+
+p h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+h1 {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
+p,
+li,
+figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+summary {
+  display: list-item;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  color: #fafafa;
+}
+
+main {
+  min-height: 70vh;
+  min-height: 70dvh;
+  position: relative;
+}
+@media (min-width: 1280px) {
+  main {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+
+section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0 0), url("/assets/images/bg.svg");
+  background-size: cover;
+  background-position: left;
+  padding: 24px;
+}
+
+.hero {
+  min-height: 70vh;
+  min-height: 70dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0 0), url("/assets/images/heroBg.svg");
+}
+@media (min-width: 1280px) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+.hero__heading {
+  order: 2;
+  font-size: 40px;
+  text-transform: lowercase;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+@media (min-width: 500px) {
+  .hero__heading {
+    font-size: 48px;
+  }
+}
+@media (min-width: 768px) {
+  .hero__heading {
+    font-size: 56px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__heading {
+    font-size: 72px;
+  }
+}
+.hero__subheading {
+  order: 1;
+  font-size: 18px;
+  margin-bottom: -16px;
+}
+@media (min-width: 1280px) {
+  .hero__subheading {
+    font-size: 28px;
+  }
+}
+.hero__copy {
+  order: 3;
+  max-width: 65ch;
+}
+
+.about__wrapper {
+  min-height: 70vh;
+  min-height: 70dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+@media (min-width: 1280px) {
+  .about__wrapper {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+.about__heading {
+  width: 100%;
+  margin-bottom: 48px;
+}
+.about__row {
+  width: 100%;
+}
+.about__row:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+.about__row span,
+.about__row p {
+  margin-left: 24px;
+}
+
+.projects__wrapper {
+  min-height: 70vh;
+  min-height: 70dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+@media (min-width: 1280px) {
+  .projects__wrapper {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
+.projects__heading, .projects__subheading {
+  margin-bottom: 24px;
+}
+.projects__copy {
+  margin-bottom: 48px;
+}
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.projects__list {
+  list-style: none;
+}
+.projects__disclaimer {
+  margin-top: 48px;
+}
+
+.project-item {
+  background-color: rgba(250, 250, 250, 0.7);
+  padding: 24px;
+  color: #000;
+}
+.project-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.project-item__copy {
+  margin-bottom: 10px;
+}
+.project-item__links a {
+  display: block;
+  color: #000;
+  font-weight: 700;
+  transition: color 0.3s linear;
+}
+.project-item__links a:not(:last-child) {
+  margin-bottom: 10px;
+}
+.project-item__links a:hover, .project-item__links a:focus, .project-item__links a:active {
+  color: #56277b;
+}
+
+footer {
+  padding: 24px 48px;
+  text-align: center;
+  background-color: #000;
+}/*# sourceMappingURL=main.css.map */
